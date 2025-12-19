@@ -1,0 +1,216 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: #434455;
+    background-color: #ffffff;
+
+}
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.header {
+    display: inline-block;
+    width: 1440px;
+    height: 72px;
+}
+
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.16667;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.logo-part {
+    color: #2e2f42;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #2e2f42;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #404BBF;
+}
+
+.address {
+    font-style: normal;
+}
+
+.address-link {
+    color: inherit;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: #404BBF;
+}
+
+.title-section {
+    background-color: #2e2f42;
+}
+
+.title-section .page-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    color: #ffffff;
+    width: 1440px;
+    height: 600px;
+    text-align: center;
+}
+
+.title-section .button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background: #4d5ae5;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.title-section .button:hover,
+.title-section .button:focus {
+    background: #404bbf;
+}
+
+.section2 {
+    display: flex;
+    width: 1440px;
+    height: 344px;
+}
+
+.section2 .section2-part {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px; 
+    width: 264px;
+    height: 104px;
+}
+
+.section2 .section2-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+
+.section2 .section2-text {
+    font-weight: 500;
+}
+
+.team {
+    width: 1440px;
+    height: 732px;
+    background: #f4f4fd;
+}
+
+.team .team-card {
+    background: inherit;
+    display: inline-block;
+    border-radius: 0 0 4px 4px;
+    width: 264px;
+    height: 380px;
+    padding: 0px 0px 32px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team .team-photo {
+    border: 1px solid #000;
+    width: 264px;
+    height: 260px;
+}
+
+.team .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    color: #2e2f42;
+    text-align: center;
+}
+
+.team .team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+    text-align: center;
+}
+
+.team .team-position {
+    text-align: center;
+}
+
+.portfolio {
+    width: 1440px;
+    height: 1240px;
+}
+
+.portfolio .portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    color: #2e2f42;
+    text-align: center;
+    width: 1440px;
+}
+
+.portfolio .portfolio-part1,
+.portfolio .portfolio-part2 {
+    display: flex;
+    width: 1128px;
+    height: 420px;
+}
+
+.portfolio .portfolio-card {
+    width: 360px;
+    height: 420px;
+    border: 1px solid #e7e9fc;
+}
+
+.portfolio .portfolio-pictures {
+    width: 360px;
+    height: 300px;
+}
+
+.portfolio .portfolio-appname {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+}
+
+.footer {
+    width: 1440px;
+    height: 312px;
+    background: #2e2f42;
+}
+
+.logo-footer {
+    color: #f4f4fd;
+}
+
+.footer .footer-text {
+    color: #f4f4fd;
+}
