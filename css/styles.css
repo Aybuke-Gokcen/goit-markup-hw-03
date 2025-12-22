@@ -5,20 +5,38 @@ body {
     line-height: 1.5;
     color: #434455;
     background-color: #ffffff;
-
 }
+
 a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 ul, ol {
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.container {
+    width: 1158px;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-    display: inline-block;
+    display: flex;
     width: 1440px;
     height: 72px;
+    border-bottom: 1px solid #e7e9fc;
+    align-items: center;
+    padding: 0 156px;
 }
 
 .logo{
@@ -29,15 +47,28 @@ ul, ol {
     line-height: 1.16667;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-part {
     color: #2e2f42;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.page-nav {
+    display: flex;
+    gap: 40px;
+}
+
 .nav-link {
     font-weight: 500;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
 }
 
 .nav-link:hover,
@@ -47,7 +78,14 @@ ul, ol {
 
 .address {
     font-style: normal;
+    margin-left: auto;
 }
+
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
 
 .address-link {
     color: inherit;
@@ -60,6 +98,12 @@ ul, ol {
 
 .title-section {
     background-color: #2e2f42;
+    width: 1440px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
 }
 
 .title-section .page-title {
@@ -67,8 +111,6 @@ ul, ol {
     font-size: 56px;
     line-height: 1.07143;
     color: #ffffff;
-    width: 1440px;
-    height: 600px;
     text-align: center;
 }
 
@@ -81,11 +123,15 @@ ul, ol {
     color: #fff;
     background: #4d5ae5;
     border-radius: 4px;
-    padding: 16px 32px;
+    padding: 16px 30px;
     width: 169px;
     height: 56px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    text-align: center;
+    margin-left: 636px;
 }
 
 .title-section .button:hover,
@@ -94,9 +140,13 @@ ul, ol {
 }
 
 .section2 {
-    display: flex;
     width: 1440px;
     height: 344px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    padding: 120px 0;
 }
 
 .section2 .section2-part {
@@ -124,22 +174,43 @@ ul, ol {
     width: 1440px;
     height: 732px;
     background: #f4f4fd;
+    padding: 120px 0;
+}
+
+.team .team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
 }
 
 .team .team-card {
     background: inherit;
-    display: inline-block;
     border-radius: 0 0 4px 4px;
     width: 264px;
     height: 380px;
     padding: 0px 0px 32px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .team .team-photo {
-    border: 1px solid #000;
     width: 264px;
-    height: 260px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.team .team-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .team .team-title {
@@ -148,6 +219,7 @@ ul, ol {
     line-height: 1.11111;
     color: #2e2f42;
     text-align: center;
+    padding-bottom: 72px;
 }
 
 .team .team-name {
@@ -155,16 +227,12 @@ ul, ol {
     font-size: 20px;
     line-height: 1.2;
     color: #2e2f42;
-    text-align: center;
-}
-
-.team .team-position {
-    text-align: center;
 }
 
 .portfolio {
     width: 1440px;
     height: 1240px;
+    padding: 120px 0;
 }
 
 .portfolio .portfolio-title {
@@ -173,25 +241,42 @@ ul, ol {
     line-height: 1.11111;
     color: #2e2f42;
     text-align: center;
-    width: 1440px;
+    padding-bottom: 72px;
 }
 
-.portfolio .portfolio-part1,
-.portfolio .portfolio-part2 {
+.portfolio .portfolio-list {
     display: flex;
-    width: 1128px;
-    height: 420px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio .portfolio-card {
     width: 360px;
     height: 420px;
-    border: 1px solid #e7e9fc;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio .portfolio-pictures {
     width: 360px;
     height: 300px;
+}
+
+.portfolio .portfolio-box {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px 16px;
+    width: 360px;
+    height: 120px;
 }
 
 .portfolio .portfolio-appname {
@@ -205,6 +290,7 @@ ul, ol {
     width: 1440px;
     height: 312px;
     background: #2e2f42;
+    padding: 100px 0 100px 156px;
 }
 
 .logo-footer {
@@ -213,4 +299,5 @@ ul, ol {
 
 .footer .footer-text {
     color: #f4f4fd;
+    padding-top: 16px;
 }
