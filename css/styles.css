@@ -26,14 +26,13 @@ ul, ol {
 
 .container {
     width: 1158px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
 .header {
     display: flex;
     width: 1440px;
-    height: 72px;
     border-bottom: 1px solid #e7e9fc;
     align-items: center;
     padding: 0 156px;
@@ -99,11 +98,12 @@ ul, ol {
 .title-section {
     background-color: #2e2f42;
     width: 1440px;
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 48px;
+    padding: 188px 0;
 }
 
 .title-section .page-title {
@@ -123,15 +123,9 @@ ul, ol {
     color: #fff;
     background: #4d5ae5;
     border-radius: 4px;
-    padding: 16px 30px;
-    width: 169px;
-    height: 56px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
+    padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    margin-left: 636px;
+    box-sizing: content-box;
 }
 
 .title-section .button:hover,
@@ -141,7 +135,6 @@ ul, ol {
 
 .section2 {
     width: 1440px;
-    height: 344px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -156,7 +149,6 @@ ul, ol {
     flex-direction: column;
     gap: 8px; 
     width: 264px;
-    height: 104px;
 }
 
 .section2 .section2-title {
@@ -172,7 +164,6 @@ ul, ol {
 
 .team {
     width: 1440px;
-    height: 732px;
     background: #f4f4fd;
     padding: 120px 0;
 }
@@ -188,7 +179,6 @@ ul, ol {
     background: inherit;
     border-radius: 0 0 4px 4px;
     width: 264px;
-    height: 380px;
     padding: 0px 0px 32px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     display: flex;
@@ -231,7 +221,6 @@ ul, ol {
 
 .portfolio {
     width: 1440px;
-    height: 1240px;
     padding: 120px 0;
 }
 
@@ -276,7 +265,6 @@ ul, ol {
     gap: 8px;
     padding: 32px 16px;
     width: 360px;
-    height: 120px;
 }
 
 .portfolio .portfolio-appname {
@@ -288,7 +276,6 @@ ul, ol {
 
 .footer {
     width: 1440px;
-    height: 312px;
     background: #2e2f42;
     padding: 100px 0 100px 156px;
 }
