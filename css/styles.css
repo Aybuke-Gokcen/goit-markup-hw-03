@@ -158,10 +158,6 @@ ul, ol {
     color: #2e2f42;
 }
 
-.section2 .section2-text {
-    font-weight: 500;
-}
-
 .team {
     width: 1440px;
     background: #f4f4fd;
@@ -176,7 +172,7 @@ ul, ol {
 }
 
 .team .team-card {
-    background: inherit;
+    background-color: #ffffff;
     border-radius: 0 0 4px 4px;
     width: 264px;
     padding: 0px 0px 32px;
